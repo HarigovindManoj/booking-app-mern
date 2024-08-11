@@ -21,7 +21,22 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+     /* Project Structure */
+     "rootDir": ".",  // Set rootDir to the project root to include both frontend and backend
+     "baseUrl": ".",  // Set baseUrl to the project root
+     "paths": {
+       "@shared/*": ["backend/src/shared/*"]
+     }
   },
-  "include": ["src"]
+
+  "include": [
+    "src",                     // Include all TypeScript files in the src directory
+    "../backend/src/shared/types"    // Include all TypeScript files in the shared directory
+  ]
+  // "include": ["src"]
+
+
+  
 }
